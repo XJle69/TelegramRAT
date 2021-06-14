@@ -54,13 +54,13 @@ namespace TelegramRAT
                             "\n /OpenURL <url>" +
                             "\n" +
                             "\n 📁📁 Файл 📁📁" +
-                            "\n /DownloadFile <file/dir>" +
-                            "\n /UploadFile <drop/url>" +
-                            "\n /RunFile <file>" +
-                            "\n /RunFileAdmin <file>" +
-                            "\n /ListFiles <dir>" +
-                            "\n /RemoveFile <file>" +
-                            "\n /RemoveDir <dir>" +
+                            "\n /DownloadFile <file/dir> - скачать файл/директорию" +
+                            "\n /UploadFile <drop/url> - загрузить файл по ссылке/перетащить" +
+                            "\n /RunFile <file> - запустить файл" +
+                            "\n /RunFileAdmin <file> - запустить файл от имени администратора" +
+                            "\n /ListFiles <dir> - посмотреть файлы в директории" +
+                            "\n /RemoveFile <file> - удалить файл" +
+                            "\n /RemoveDir <dir> удалить директорию" +
                             "");
                         break;
                     }

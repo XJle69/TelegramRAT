@@ -55,20 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -93,6 +88,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Minimaze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoginClassLibrary\LoginClassLibrary.csproj">
+      <Project>{d1643cd7-7edb-40bc-b445-f1337ba8fa75}</Project>
+      <Name>LoginClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RATClassLibrary\RATClassLibrary.csproj">
+      <Project>{a8fb2a83-f3fd-4215-a6c9-b712eef5d1a9}</Project>
+      <Name>RATClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
